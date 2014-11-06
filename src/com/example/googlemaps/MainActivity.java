@@ -292,8 +292,8 @@ public class MainActivity extends Activity implements OnMapLongClickListener,
 			LatLng pos = new LatLng(Double.parseDouble(lat),
 					Double.parseDouble(lon));
 			CameraUpdate cam = CameraUpdateFactory.newLatLngZoom(pos, 15);
-			
 			googleMap.moveCamera(cam);
+			
 			if(zr.contains(pos)){
 				Toast.makeText(getApplicationContext(), "Zona de riesgo",
 						Toast.LENGTH_LONG).show();
